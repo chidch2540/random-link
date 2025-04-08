@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Redirect</title>
+  <script>
+    window.onload = function() {
+      // ใส่ลิงก์ที่คุณต้องการสุ่มไว้ตรงนี้
+      const links = [
+        "https://example.com",
+        "https://openai.com",
+        "https://github.com",
+        "https://wikipedia.org"
+      ];
+      
+      // สุ่มลิงก์
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <p>กำลังพาไปยังเว็บไซต์แบบสุ่ม...</p>
+</body>
+</html>
